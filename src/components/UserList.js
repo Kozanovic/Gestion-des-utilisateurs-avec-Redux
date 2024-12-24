@@ -57,7 +57,7 @@ export default function UserList() {
                   <td>{user.email}</td>
                   <td>{findRoleName(user.id_role)}</td>
                   <td>
-                    <Link to={`/user-form?id=${user.id}`}>
+                    <Link to={`/user-form/${user.id}`}>
                       <button
                         onClick={() =>
                           dispatch({ type: "edit", payload: user })

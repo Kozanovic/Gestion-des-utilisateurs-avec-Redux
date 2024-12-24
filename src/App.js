@@ -9,7 +9,7 @@ export default function App() {
       <h1>Gestion des utilisateurs</h1>
       <Routes>
         <Route path="/" element={<UserList />} />
-        <Route path="/user-form" element={<UserForm />} />
+        <Route path="/user-form/:id" element={<UserForm />} />
       </Routes>
     </BrowserRouter>
   );
